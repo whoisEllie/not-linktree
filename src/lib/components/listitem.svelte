@@ -2,10 +2,12 @@
 
   export let link;
   export let text;
+  export let iconslug;
 
 </script>
 
 <button on:click={() => window.open(link)} class="link-panel">
+  <img height="24" width="24" src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/{iconslug}.svg" />
   {text}
 </button>
 
@@ -23,6 +25,10 @@
   border: none;
   background: transparent;
   cursor: pointer;
+}
+
+.link-panel img {
+  padding: 0 0.5rem 0 0;
 }
 
 </style>

@@ -1,6 +1,7 @@
 <script>
     import Listitem from "$lib/components/listitem.svelte";
 
+
 </script>
 
 <div class="wrapper">
@@ -14,11 +15,11 @@
       </div>
     </div>
     <div class="links-wrapper">
-      <Listitem link="https://www.linkedin.com/in/ellie-kelemen" text="LinkedIn"/>
+      <Listitem link="https://www.linkedin.com/in/ellie-kelemen" text="LinkedIn" iconslug="linkedin"/>
       <div class="spacer"></div>
-      <Listitem link="https://www.github.com/whoisellie" text="Github"/>
+      <Listitem link="https://www.github.com/whoisellie" text="Github" iconslug="github"/>
       <div class="spacer"></div>
-      <Listitem link="https://www.youtube.com/@elliemakesgames" text="Youtube"/>
+      <Listitem link="https://www.youtube.com/@elliemakesgames" text="YouTube" iconslug="youtube"/>
     </div>
     <div on:click={() => window.open("https://github.com/whoisEllie/not-linktree")} class="acknowledgment">
         {"Built with ❤️  & SvelteKit"}
