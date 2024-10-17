@@ -1,31 +1,31 @@
 <script>
     import Listitem from "$lib/components/listitem.svelte";
-
-
 </script>
 
-<div class="wrapper">
-  <div class="grid">
-    <div class="namecard">
-        <img src="pfp.jpg" alt="Ellie smiling at the camera" class="pfp"/>
-      <div>
-        <div style="font-size: 24px;">
-          Ellie Kelemen
-        </div>
+<div class="background">
+  <div class="wrapper">
+    <div class="grid">
+      <div class="namecard">
+          <img src="pfp.jpg" alt="Ellie smiling at the camera" class="pfp"/>
         <div>
-          Software Engineer, Technical Director, Maker
+          <div style="font-size: 1.75rem; font-family: tajawalbold;">
+            Ellie Kelemen
+          </div>
+          <div style="font-size: 1rem;">
+            Software Engineer, Technical Director, Maker
+          </div>
         </div>
       </div>
-    </div>
-    <div class="links-wrapper">
-      <Listitem link="https://www.linkedin.com/in/ellie-kelemen" text="LinkedIn" iconslug="linkedin"/>
-      <div class="spacer"></div>
-      <Listitem link="https://www.github.com/whoisellie" text="Github" iconslug="github"/>
-      <div class="spacer"></div>
-      <Listitem link="https://www.youtube.com/@elliemakesgames" text="YouTube" iconslug="youtube"/>
-    </div>
-    <div on:click={() => window.open("https://github.com/whoisEllie/not-linktree")} class="acknowledgment">
-        {"Built with ❤️  & SvelteKit"}
+      <div class="links-wrapper">
+        <Listitem link="https://www.linkedin.com/in/ellie-kelemen" text="LinkedIn" iconslug="linkedin"/>
+        <div class="spacer"></div>
+        <Listitem link="https://www.github.com/whoisellie" text="Github" iconslug="github"/>
+        <div class="spacer"></div>
+        <Listitem link="https://www.youtube.com/@elliemakesgames" text="YouTube" iconslug="youtube"/>
+      </div>
+      <div on:click={() => window.open("https://github.com/whoisEllie/not-linktree")} class="acknowledgment">
+          {"Built with ❤️  & SvelteKit"}
+      </div>
     </div>
   </div>
 </div>
@@ -37,13 +37,16 @@
   padding: 0;
 }
 
-.wrapper {
+.background {
   height: 100svh;
-  width: 100vw;
   display: flex;
   justify-content: center;
+  overflow: scroll;
   background: #f0f0f0;
-  align-items: center;
+}
+
+.wrapper {
+  justify-content: center;
 }
 
 .grid {
@@ -60,13 +63,12 @@
   justify-content: center;
   font-family: "tajawalmedium";
   align-items: center;
-  padding: 2.5rem 1.5rem;
+  padding: 2.5rem 0;
 }
 
 .pfp {
   display: flex;
   aspect-ratio: 1/1;
-  background: red;
   width: 100%;
   height: 100%;
   border-radius: 100%;
@@ -82,7 +84,7 @@
   background: linear-gradient(135deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
   border-radius: 25px;
   background: linear-gradient(145deg, #d8d8d8, #ffffff);
-  box-shadow:  20px 20px 39px #cacaca,
+  box-shadow:  20px 20px 39px #8d8d8d,
                -20px -20px 39px #ffffff;
 }
 
