@@ -22,6 +22,10 @@
         <Listitem link="https://www.github.com/whoisellie" text="Github" iconslug="github"/>
         <div class="spacer"></div>
         <Listitem link="https://www.youtube.com/@elliemakesgames" text="YouTube" iconslug="youtube"/>
+        <div class="spacer"></div>
+        <Listitem link="resume.pdf" text="Resume" iconslug="googledocs"/>
+        <div class="spacer"></div>
+        <Listitem link="https://www.elliekelemen.com" text="Website" iconslug="svelte"/>
       </div>
       <div on:click={() => window.open("https://github.com/whoisEllie/not-linktree")} class="acknowledgment">
           {"Built with ❤️  & SvelteKit"}
