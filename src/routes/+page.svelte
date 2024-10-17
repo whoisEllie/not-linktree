@@ -34,7 +34,7 @@
 }
 
 .wrapper {
-  height: 100vh;
+  height: 100svh;
   width: 100vw;
   display: flex;
   justify-content: center;
