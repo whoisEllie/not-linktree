@@ -23,9 +23,9 @@
         <div class="spacer"></div>
         <Listitem link="https://www.youtube.com/@elliemakesgames" text="YouTube" iconslug="youtube"/>
         <div class="spacer"></div>
-        <Listitem link="resume.pdf" text="Resume" iconslug="googledocs"/>
-        <div class="spacer"></div>
         <Listitem link="https://www.elliekelemen.com" text="Website" iconslug="svelte"/>
+        <div class="spacer"></div>
+        <Listitem link="resume.pdf" text="Resume" iconslug="googledocs"/>
       </div>
       <div on:click={() => window.open("https://github.com/whoisEllie/not-linktree")} class="acknowledgment">
           {"Built with ❤️  & SvelteKit"}
@@ -46,7 +46,7 @@
   display: flex;
   justify-content: center;
   overflow: scroll;
-  background: #f0f0f0;
+  background: #e0e0e0;
 }
 
 .wrapper {
@@ -84,12 +84,10 @@
   flex-direction: column;
   width: min(100vw - 2rem, 440px);
   margin-inline: auto;
-  background: rgb(131,58,180);
-  background: linear-gradient(135deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
   border-radius: 25px;
-  background: linear-gradient(145deg, #d8d8d8, #ffffff);
-  box-shadow:  20px 20px 39px #8d8d8d,
-               -20px -20px 39px #ffffff;
+  background: linear-gradient(145deg, #cacaca, #f0f0f0);
+  box-shadow:  20px 20px 70px #bebebe,
+               -20px -20px 70px #ffffff;
 }
 
 .spacer {
@@ -107,7 +105,7 @@
   cursor: pointer;
   font-family: "tajawalmedium";
   border-radius: 25px;
-  background: linear-gradient(145deg, #d8d8d8, #ffffff);
+  background: linear-gradient(145deg, #cacaca, #f0f0f0);
   box-shadow:  9px 9px 17px #cacaca,
              -9px -9px 17px #ffffff;
 
