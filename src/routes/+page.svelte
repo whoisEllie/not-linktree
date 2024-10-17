@@ -53,6 +53,8 @@
 
 .namecard {
   display: grid;
+  width: min(100vw - 2rem, 440px);
+  margin-inline: auto;
   grid-template-columns: repeat(2, 50%);
   column-gap: 1rem;
   justify-content: center;
