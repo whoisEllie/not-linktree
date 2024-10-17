@@ -46,7 +46,7 @@
   display: flex;
   justify-content: center;
   overflow: scroll;
-  background: #e0e0e0;
+  background: #f0f0f0;
 }
 
 .wrapper {
@@ -85,8 +85,8 @@
   width: min(100vw - 2rem, 440px);
   margin-inline: auto;
   border-radius: 25px;
-  background: linear-gradient(145deg, #cacaca, #f0f0f0);
-  box-shadow:  20px 20px 70px #bebebe,
+  background: linear-gradient(145deg, #d8d8d8, #f0f0f0);
+  box-shadow:  20px 20px 70px #cccccc,
                -20px -20px 70px #ffffff;
 }
 
@@ -105,8 +105,8 @@
   cursor: pointer;
   font-family: "tajawalmedium";
   border-radius: 25px;
-  background: linear-gradient(145deg, #cacaca, #f0f0f0);
-  box-shadow:  9px 9px 17px #cacaca,
+  background: linear-gradient(145deg, #d8d8d8, #f0f0f0);
+  box-shadow:  9px 9px 17px #cccccc,
              -9px -9px 17px #ffffff;
 
 }
