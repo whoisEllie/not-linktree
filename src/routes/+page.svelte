@@ -6,12 +6,15 @@
 
 <div class="wrapper">
   <div class="grid">
-    <div class="title">
-      <div style="font-family: Playwrite; font-size: 3rem; font-weight: bold;">
-        <i>Hello!</i>
-      </div>
-      <div style="font-family:  tajawalmedium;">
-        This is where you can find me on the internet!
+    <div class="namecard">
+        <img src="pfp.jpg" alt="Ellie smiling at the camera" class="pfp"/>
+      <div>
+        <div style="font-size: 24px;">
+          Ellie Kelemen
+        </div>
+        <div>
+          Software Engineer, Technical Director, Maker
+        </div>
       </div>
     </div>
     <div class="links-wrapper">
@@ -48,19 +51,31 @@
   grid-template-rows: auto auto auto;
 }
 
-.title {
-  display: flex;
-  flex-direction: column;
+.namecard {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  column-gap: 1rem;
   justify-content: center;
-  font-family: "Playwrite";
+  font-family: "tajawalmedium";
   align-items: center;
-  padding: 1.5rem 0;
+  padding: 2.5rem 1.5rem;
+}
+
+.pfp {
+  display: flex;
+  aspect-ratio: 1/1;
+  background: red;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  object-fit: cover;
 }
 
 .links-wrapper {
   display: flex;
   flex-direction: column;
-  column-gap: 1rem;
+  width: min(100vw - 2rem, 440px);
+  margin-inline: auto;
   background: rgb(131,58,180);
   background: linear-gradient(135deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
   border-radius: 25px;

@@ -17,7 +17,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem 0;
+  padding: 1.75rem 0;
   color: black;
   text-decoration: none;
   font-size: 1.75rem;
